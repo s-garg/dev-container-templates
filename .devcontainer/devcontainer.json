@@ -1,6 +1,10 @@
 {
     "name": "Go Dev Container Template",
     "workspaceFolder": "/workspaces/dev-container-templates",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/dev-container-templates,type=bind,consistency=cached",
+    "mounts": [
+        "source=go-build-cache,target=/home/vscode/.cache/go-build,type=volume"
+    ],
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },

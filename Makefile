@@ -6,6 +6,10 @@ ide:
 	@echo "Opening IDE..."
 	devcontainer open
 
+build:
+	@echo "Building project..."
+	go build .
+
 run:
 	@echo "Running server..."
-	go run main.go
+	go run .

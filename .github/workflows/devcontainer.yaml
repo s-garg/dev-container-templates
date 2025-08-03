@@ -15,7 +15,5 @@ jobs:
       - name: Build dev container
         uses: devcontainers/ci@v0.3
         with:
-          runCmd: |
-            go version
-            go build ./...
-
+          push: never
+          runCmd: make build

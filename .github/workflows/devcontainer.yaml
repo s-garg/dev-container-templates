@@ -18,3 +18,4 @@ jobs:
           runCmd: |
             go version
             go build ./...
+

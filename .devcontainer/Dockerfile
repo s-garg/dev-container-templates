@@ -10,7 +10,8 @@ RUN apt-get update && \
     apt-get -y install --reinstall ca-certificates && \
     apt-get -y install sudo \
     software-properties-common \
-    git
+    git \
+    make
 
 # Set environment variables for the new non-root user
 ENV USER_NAME vscode

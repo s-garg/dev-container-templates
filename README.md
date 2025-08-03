@@ -41,6 +41,15 @@ Includes a simple HTTP server example, caching for faster builds, and recommende
      devcontainer open
      ```
 
+   **Option C: Makefile shortcut**
+
+   * Install the [Dev Container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli)
+   * Run:
+
+     ```bash
+     make ide
+     ```
+
 4. **Start developing!**
    The container will automatically:
 
@@ -56,8 +65,11 @@ Includes a simple HTTP server example, caching for faster builds, and recommende
 Inside the container:
 
 ```bash
-# Run the server
+# Run with Go directly
 go run main.go
+
+# Or use the Makefile shortcut
+make run
 
 # Test the health endpoint
 curl http://localhost:8080/health
@@ -87,4 +99,3 @@ The server will be available at [http://localhost:8080](http://localhost:8080)
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-

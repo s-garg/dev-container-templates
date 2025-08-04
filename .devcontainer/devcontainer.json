@@ -1,0 +1,46 @@
+{
+    "name": "Python Dev Container",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspaces/dev-container-templates",
+    "forwardPorts": [
+        8080,
+        8888
+    ],
+    "postCreateCommand": ".devcontainer/setup.sh",
+    "postStartCommand": "uv run jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --NotebookApp.token='' --NotebookApp.password=''",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "charliermarsh.ruff",
+                "ms-vscode.makefile-tools",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-slideshow"
+            ],
+            "settings": {
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "editor.formatOnSave": true,
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
+                "python.testing.autoTestDiscoverOnSaveEnabled": true,
+                "python.analysis.autoImportCompletions": true,
+                "python.analysis.indexing": true,
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#00ADD8",
+                    "titleBar.activeForeground": "#ffffff",
+                    "statusBar.background": "#00A29C",
+                    "statusBar.foreground": "#ffffff",
+                    "statusBar.debuggingBackground": "#FDDD00",
+                    "statusBar.debuggingForeground": "#000000"
+                }
+            }
+        }
+    }
+}

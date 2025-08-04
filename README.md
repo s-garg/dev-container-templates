@@ -1,6 +1,3 @@
-Here’s the **updated README** to match your Python FastAPI setup + new Makefile workflow:
-
-````markdown
 # Python Dev Container Template
 
 A ready-to-use [VS Code Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) template for Python development.
@@ -110,7 +107,3 @@ make run     # Run the FastAPI server
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
-```
-
-Want me to add a **section for testing** (`make test` with pytest) in both the Makefile and README so you’ve got the full dev workflow documented?
-```

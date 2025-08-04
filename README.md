@@ -1,6 +1,6 @@
 # Claude Dev Container Template
 
-A minimal [VS Code Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) template with [Claude for VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) preinstalled. 
+A minimal [VS Code Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) template with [Claude for VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) preinstalled.
 
 ---
 
@@ -42,8 +42,3 @@ A minimal [VS Code Dev Container](https://code.visualstudio.com/docs/devcontaine
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-```
-
-Do you want me to also add a quick **usage example** (like running `claude` from the terminal inside the container), or keep it strictly minimal?
-```

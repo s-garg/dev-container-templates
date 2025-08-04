@@ -1,0 +1,26 @@
+{
+    "name": "Claude Dev Container Template",
+    "workspaceFolder": "/workspaces/dev-container-templates",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "anthropic.claude-code",
+            ],
+            "settings": {
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "editor.formatOnSave": true,
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#19549C",
+                    "titleBar.activeForeground": "#ffffff",
+                    "statusBar.background": "#19549C",
+                    "statusBar.foreground": "#ffffff",
+                    "statusBar.debuggingBackground": "#FFD700",
+                    "statusBar.debuggingForeground": "#000000"
+                }
+            }
+        }
+    }
+}

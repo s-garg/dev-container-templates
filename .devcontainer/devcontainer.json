@@ -1,0 +1,44 @@
+{
+    "name": "Java Dev Container Template",
+    "workspaceFolder": "/workspaces/dev-container-templates",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/dev-container-templates,type=bind,consistency=cached",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "forwardPorts": [
+        8080
+    ],
+    "dockerFile": "Dockerfile",
+    "postCreateCommand": ".devcontainer/setup.sh",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack", // Java language support + debugger
+                "microsoft.vscode-java-test", // Test runner
+                "redhat.java",
+                "pivotal.vscode-spring-boot" // Drop if not using Spring
+            ],
+            "settings": {
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "editor.formatOnSave": true,
+                "java.jdt.ls.java.home": "${env:JAVA_HOME}",
+                "[java]": {
+                    "editor.defaultFormatter": "redhat.java",
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": "always"
+                    }
+                },
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#19549C",
+                    "titleBar.activeForeground": "#ffffff",
+                    "statusBar.background": "#19549C",
+                    "statusBar.foreground": "#ffffff",
+                    "statusBar.debuggingBackground": "#FFD700",
+                    "statusBar.debuggingForeground": "#000000"
+                }
+            }
+        }
+    }
+}

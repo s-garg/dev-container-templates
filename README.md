@@ -18,9 +18,9 @@ Includes a simple FastAPI server example, configured VS Code extensions, and dep
 
 1. **Clone this repository**
 
-   ```bash
-   git clone <repository-url>
-   cd dev-container-templates
+```bash
+git clone <repository-url>
+cd dev-container-templates
 ````
 
 2. **Open in VS Code**

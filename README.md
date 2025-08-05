@@ -7,24 +7,14 @@ Opinionated templates for consistent dev environments using **Dev Containers** (
 
 ## Why Dev Containers?
 
-In production, [**Docker**](https://www.docker.com/) makes builds and environments **predictable, portable, and repeatable**.
-[**Dev Containers**](https://containers.dev/) bring the same reliability to **development**.
+In production, [Docker](https://www.docker.com/) makes builds and environments **predictable, portable, and repeatable**.
+[Dev Containers](https://containers.dev/) bring the same reliability to **development**.
 
-A Dev Container is a [**Docker container**](https://docs.docker.com/get-started/overview/) preconfigured with the required **tools, runtimes, and shell settings**. When used with [**VS Code**](https://code.visualstudio.com/), it ensures the correct **dependencies, versions, and tooling** are always in place — avoiding conflicts between projects and removing the need for manual setup. For example, one project may require Python 3.12 while another depends on Python 3.9 — Dev Containers keep these environments **isolated** so they never interfere with one another.
+A Dev Container is a [Docker container](https://docs.docker.com/get-started/overview/) preconfigured with the required **tools, runtimes, and shell settings**. When used with [VS Code](https://code.visualstudio.com/), it ensures the correct **dependencies, versions, and tooling** are always in place — avoiding conflicts between projects and removing the need for manual setup. For example, one project may require Python 3.12 while another depends on Python 3.9 — Dev Containers keep these environments **isolated** so they never interfere with one another.
 
 This approach delivers **consistent environments** across platforms and team members, **isolates development** from the host system for clean and reproducible workspaces, and makes **onboarding effortless**: simply clone the repo and reopen it in a container.
 
 Dev Containers replace the long “follow these steps to set up your environment” checklist with a single, reproducible setup that produces the same environment every time.
-
-
-A **Dev Container** is a Docker container preconfigured with tools, runtimes, and shell settings. It delivers:
-
-* Zero setup: clone + open in container, no local installs
-* Consistency across platforms and team members
-* Isolation from host environment—clean, reproducible workspace
-* Easy onboarding — works the same in Codespaces and VS Code
-
-Dev Containers eliminate the *“works on my machine”* issue.
 
 ---
 

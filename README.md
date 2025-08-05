@@ -20,14 +20,16 @@ Dev Containers eliminate the *“works on my machine”* issue.
 
 ## Branches / Templates
 
-| Branch                                                                      | Description                                                     | Build Status                                                                                                              |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [go](https://github.com/s-garg/dev-container-templates/tree/go)             | Go development environment                                      | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=go)       |
-| [java](https://github.com/s-garg/dev-container-templates/tree/java)         | Java development environment with SpringBoot                   | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=java)     |
-| [python](https://github.com/s-garg/dev-container-templates/tree/python)     | Python 3 development environment with [uv](https://github.com/astral-sh/uv) and FastAPI | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=python)   |
-| [notebook](https://github.com/s-garg/dev-container-templates/tree/notebook) | Jupyter Notebook / Data Science environment                     | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=notebook) |
-| [claude](https://github.com/s-garg/dev-container-templates/tree/claude)     | Dev container with Claude for VS Code preinstalled              | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=claude)   |
-| [zsh](https://github.com/s-garg/dev-container-templates/tree/zsh)           | zsh with oh‑my‑zsh and useful plugins                           | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=zsh)      |
+| Branch | Description | Build Status |
+|--------|-------------|--------------|
+| [go](https://github.com/s-garg/dev-container-templates/tree/go) | Go development environment | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=go) |
+| [java](https://github.com/s-garg/dev-container-templates/tree/java) | Java development environment with Spring Boot | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=java) |
+| [python](https://github.com/s-garg/dev-container-templates/tree/python) | Python 3 development environment with uv and FastAPI | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=python) |
+| [notebook](https://github.com/s-garg/dev-container-templates/tree/notebook) | Jupyter Notebook / Data Science environment | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=notebook) |
+| [claude](https://github.com/s-garg/dev-container-templates/tree/claude) | Dev container with Claude for VS Code preinstalled | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=claude) |
+| [zsh](https://github.com/s-garg/dev-container-templates/tree/zsh) | zsh with oh‑my‑zsh and useful plugins | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=zsh) |
+
+The [claude](https://github.com/s-garg/dev-container-templates/tree/claude) and [zsh](https://github.com/s-garg/dev-container-templates/tree/zsh) templates can be combined with any of the language environments above for an enhanced development experience.
 
 ---
 

@@ -1,6 +1,6 @@
 FROM debian:bookworm-slim
 
-# Install JDK, curl, unzip
+# Install NodeJS, NPM
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         nodejs \

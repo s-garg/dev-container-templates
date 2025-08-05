@@ -33,24 +33,28 @@ The [claude](https://github.com/s-garg/dev-container-templates/tree/claude) and 
 
 ---
 
-## Features
-
-* Preconfigured environments for Go, Java, Python, Jupyter, Claude, and zsh
-* Based on lightweight Debian images
-* Non-root `vscode` user for safer defaults
-* Custom VS Code settings baked in via `devcontainer.json`
-* Shell customization with **zsh** and plugins (where relevant)
-
----
-
 ## Structure
 
-Each branch contains a full `.devcontainer/` setup and `Dockerfile`, customized for that environment.
+Each branch provides a complete `.devcontainer/` setup and `Dockerfile`, tailored for its specific environment.
 
-Common features include:
+**Common features across branches:**
 
-* Non-root user (`vscode`)
-* Custom VS Code settings in `devcontainer.json`
+* Lightweight Debian base image
+* Non‑root `vscode` user (safer default for dev containers)
+* Preconfigured VS Code settings via `devcontainer.json`
+
+**Example layout:**
+
+```
+.
+├── .devcontainer/
+│   ├── devcontainer.json   # VS Code devcontainer configuration
+│   └── Dockerfile          # Environment definition
+├── README.md               # Branch-specific documentation
+└── LICENSE                 # MIT License
+```
+
+👉 Check the README in each branch for language/framework‑specific details.
 
 ---
 

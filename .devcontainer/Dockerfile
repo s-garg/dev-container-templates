@@ -8,6 +8,7 @@ RUN apt-get update && \
     git \
     make \
     curl \
+    procps \
     && rm -rf /var/lib/apt/lists/*
 
 # Create non-root vscode user with sudo

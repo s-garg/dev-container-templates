@@ -3,11 +3,10 @@
     "dockerFile": "Dockerfile",
     "workspaceFolder": "/workspaces/dev-container-templates",
     "forwardPorts": [
-        8080,
         8888
     ],
     "postCreateCommand": ".devcontainer/setup.sh",
-    "postStartCommand": "uv run jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --NotebookApp.token='' --NotebookApp.password=''",
+    "postStartCommand": ".devcontainer/start.sh",
     "remoteUser": "vscode",
     "customizations": {
         "vscode": {

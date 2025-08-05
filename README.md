@@ -1,3 +1,4 @@
+
 # Jupyter Notebook Dev Container Template
 
 A ready-to-use [VS Code Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) template for Python + Jupyter development.
@@ -17,10 +18,10 @@ Includes JupyterLab, classic Notebook, and common data science libraries (NumPy,
 
 1. **Clone this repository**
 
-```bash
-git clone <repository-url>
-cd dev-container-templates
-````
+    ```bash
+    git clone <repository-url>
+    cd dev-container-templates
+    ````
 
 2. **Open in VS Code**
 
@@ -50,6 +51,25 @@ cd dev-container-templates
 
 ---
 
+## Connecting to Jupyter
+
+The container automatically runs JupyterLab on **port 8888** with no token or password.
+
+### Option A: Open Jupyter in your host browser
+
+1. After the container starts, VS Code will forward port **8888** to your host.
+2. Open [http://localhost:8888](http://localhost:8888) in your browser.
+3. You should see JupyterLab running inside the dev container.
+
+### Option B: Use Jupyter directly inside VS Code
+
+1. Install the **Jupyter** extension (already included in `.devcontainer/devcontainer.json`).
+2. Open any `.ipynb` notebook file in VS Code.
+3. When prompted, select the **Python kernel** provided by the container (`.venv`).
+4. Run cells inline with `Shift+Enter` or the play button.
+
+---
+
 ## Dev Container Features
 
 * **Python 3.12** with isolated `.venv` created by **uv**
@@ -76,3 +96,4 @@ cd dev-container-templates
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+

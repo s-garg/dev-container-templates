@@ -27,25 +27,25 @@ Dev Containers replace manual environment setup with a single, reproducible conf
 
 ### Language Environments
 
-| Branch | Description | Build Status | README |
-| --- | --- | --- | --- |
-| [go](https://github.com/s-garg/dev-container-templates/tree/go) | Go development environment | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=go) | [Go README](https://github.com/s-garg/dev-container-templates/blob/go/README.md) |
-| [java](https://github.com/s-garg/dev-container-templates/tree/java) | Java development environment with Spring Boot | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=java) | [Java README](https://github.com/s-garg/dev-container-templates/blob/java/README.md) |
-| [python](https://github.com/s-garg/dev-container-templates/tree/python) | Python 3 dev environment with uv and FastAPI | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=python) | [Python README](https://github.com/s-garg/dev-container-templates/blob/python/README.md) |
-| [notebook](https://github.com/s-garg/dev-container-templates/tree/notebook) | Jupyter Notebook / Data Science environment | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=notebook) | [Notebook README](https://github.com/s-garg/dev-container-templates/blob/notebook/README.md) |
+| Branch | Description | Build Status |
+| --- | --- | --- |
+| [go](https://github.com/s-garg/dev-container-templates/tree/go) | Go development environment — gopls, golangci-lint, cache, sample server — [README](https://github.com/s-garg/dev-container-templates/blob/go/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=go) |
+| [java](https://github.com/s-garg/dev-container-templates/tree/java) | Java development environment with Spring Boot — [README](https://github.com/s-garg/dev-container-templates/blob/java/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=java) |
+| [python](https://github.com/s-garg/dev-container-templates/tree/python) | Python 3 dev environment with uv, FastAPI, tasks, debug preset — [README](https://github.com/s-garg/dev-container-templates/blob/python/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=python) |
+| [notebook](https://github.com/s-garg/dev-container-templates/tree/notebook) | Jupyter Notebook / Data Science environment — Jupyter, common DS libs — [README](https://github.com/s-garg/dev-container-templates/blob/notebook/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=notebook) |
 
 ### Orchestration
 
-| Branch | Description | Build Status | README |
-| --- | --- | --- | --- |
-| [docker-compose](https://github.com/s-garg/dev-container-templates/tree/docker-compose) | Python (FastAPI) app with PostgreSQL and Redis via Docker Compose | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=docker-compose) | [Docker Compose README](https://github.com/s-garg/dev-container-templates/blob/docker-compose/README.md) |
+| Branch | Description | Build Status |
+| --- | --- | --- |
+| [docker-compose](https://github.com/s-garg/dev-container-templates/tree/docker-compose) | Python (FastAPI) app with PostgreSQL and Redis via Docker Compose — [README](https://github.com/s-garg/dev-container-templates/blob/docker-compose/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=docker-compose) |
 
 ### Extras
 
-| Branch | Description | Build Status | README |
-| --- | --- | --- | --- |
-| [claude](https://github.com/s-garg/dev-container-templates/tree/claude) | Dev container with Claude for VS Code preinstalled | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=claude) | [Claude README](https://github.com/s-garg/dev-container-templates/blob/claude/README.md) |
-| [zsh](https://github.com/s-garg/dev-container-templates/tree/zsh) | zsh with oh-my-zsh and useful plugins | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=zsh) | [zsh README](https://github.com/s-garg/dev-container-templates/blob/zsh/README.md) |
+| Branch | Description | Build Status |
+| --- | --- | --- |
+| [claude](https://github.com/s-garg/dev-container-templates/tree/claude) | Dev container with Claude for VS Code preinstalled — [README](https://github.com/s-garg/dev-container-templates/blob/claude/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=claude) |
+| [zsh](https://github.com/s-garg/dev-container-templates/tree/zsh) | zsh with oh-my-zsh and useful plugins — [README](https://github.com/s-garg/dev-container-templates/blob/zsh/README.md) | ![Build](https://github.com/s-garg/dev-container-templates/actions/workflows/devcontainer.yaml/badge.svg?branch=zsh) |
 
 ---
 

@@ -1,5 +1,5 @@
 {
-    "name": "Claude Dev Container Template",
+    "name": "ZSH Container Template",
     "workspaceFolder": "/workspaces/dev-container-templates",
     "dockerFile": "Dockerfile",
     "remoteUser": "vscode",

@@ -1,29 +1,34 @@
 {
     "name": "Go Dev Container Template",
     "workspaceFolder": "/workspaces/dev-container-templates",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/dev-container-templates,type=bind,consistency=cached",
-    "mounts": [
-        "source=go-build-cache,target=/home/vscode/.cache/go-build,type=volume"
-    ],
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "mounts": [],
+    "containerEnv": {
+        "GOPATH": "/go",
+        "GOCACHE": "/home/vscode/.cache/go-build"
+    },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers/features/github-cli:1": {}
     },
     "forwardPorts": [
         8080
     ],
-    "dockerFile": "Dockerfile",
     "postCreateCommand": ".devcontainer/setup.sh",
-    "remoteUser": "vscode",
     "customizations": {
         "vscode": {
             "extensions": [
-                "golang.Go",
+                "golang.go",
                 "golangci.golangci-lint"
             ],
             "settings": {
                 "files.insertFinalNewline": true,
                 "editor.formatOnSave": true,
                 "files.trimTrailingWhitespace": true,
+                "go.useLanguageServer": true,
+                "go.toolsManagement.autoUpdate": true,
                 "go.toolsManagement.checkForUpdates": "local",
                 "go.lintTool": "golangci-lint",
                 "go.lintFlags": [

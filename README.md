@@ -82,17 +82,15 @@ The server will be available at [http://localhost:8080](http://localhost:8080)
 
 ## Dev Container Features
 
-* **Go toolchain** with `gopls`, `golangci-lint`, and `goimports` preconfigured.
-
-* **VS Code Extensions**:
-
-  * [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
-  * [golangci-lint](https://marketplace.visualstudio.com/items?itemName=golangci-lint)
-
-* **Persistent Cache**:
-
-  * `go-build-cache` → `/home/vscode/.cache/go-build` (compiled artifacts)
-    This survives container rebuilds, making builds much faster.
+* Base image: `mcr.microsoft.com/devcontainers/go:1-1.23-bookworm` (Debian 12)
+* Non-root user: `vscode`
+* Go toolchain with `gopls` and `goimports`; linting via `golangci-lint`
+* VS Code extensions: [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go), [golangci-lint](https://marketplace.visualstudio.com/items?itemName=golangci-lint)
+* GitHub CLI installed via devcontainer feature (`gh` available)
+* Port forwarding: `8080`
+* Environment: `GOPATH=/go`, `GOCACHE=/home/vscode/.cache/go-build` (persistent between rebuilds)
+* Post-create: runs `.devcontainer/setup.sh` (go mod download + tidy)
+* Utilities: `make` installed
 
 ---
 
